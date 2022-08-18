@@ -29,6 +29,8 @@ const Signup = () => {
           onChange={handleChange}
           value={loginForm.username}
         />
+      </div>
+      <div className="inputs">
         <h3>Password : </h3>
         <input
           type="password"
@@ -36,14 +38,12 @@ const Signup = () => {
           onChange={handleChange}
           value={loginForm.password}
         />
-        <button>Submit</button>
+      </div>
+      <div className="submit-button">
+        <button type="submit">Submit</button>
       </div>
     </form>
   );
 };
 
 export default Signup;
-
-function SetState() {
-  throw new Error('Function not implemented.');
-}
